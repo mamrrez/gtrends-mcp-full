@@ -6,6 +6,7 @@
 
 32 tools · Trending Now with real search volumes · interest over time, by region and related searches · seasonality, momentum and share of search · no API key, no browser, no sign-in.
 
+[![PyPI](https://img.shields.io/pypi/v/gtrends-mcp-full)](https://pypi.org/project/gtrends-mcp-full/)
 [![CI](https://github.com/mamrrez/gtrends-mcp-full/actions/workflows/ci.yml/badge.svg)](https://github.com/mamrrez/gtrends-mcp-full/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![MCP SDK 2.x](https://img.shields.io/badge/MCP%20SDK-2.x-green)](https://github.com/modelcontextprotocol/python-sdk)
@@ -113,12 +114,12 @@ You need Python 3.10 or newer and [uv](https://docs.astral.sh/uv/) (or pip).
 
 ### 1. Add it to your client
 
-Nothing to download first: `uvx` fetches and runs the server straight from this repository.
+Nothing to download first: `uvx` fetches the package from PyPI and runs it.
 
 **Claude Code**
 
 ```sh
-claude mcp add gtrends -- uvx --from git+https://github.com/mamrrez/gtrends-mcp-full gtrends-mcp-full
+claude mcp add gtrends -- uvx gtrends-mcp-full
 ```
 
 **Claude Desktop, Cursor, Windsurf, VS Code** — add this to the client's MCP configuration:
@@ -128,7 +129,7 @@ claude mcp add gtrends -- uvx --from git+https://github.com/mamrrez/gtrends-mcp-
   "mcpServers": {
     "gtrends": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/mamrrez/gtrends-mcp-full", "gtrends-mcp-full"],
+      "args": ["gtrends-mcp-full"],
       "env": {
         "GTRENDS_GEO": "US",
         "GTRENDS_TIMEZONE": "America/New_York"
@@ -143,7 +144,7 @@ Both `env` entries are optional. There is nothing else to configure: no key, no 
 ### 2. Check it
 
 ```sh
-uvx --from git+https://github.com/mamrrez/gtrends-mcp-full gtrends-mcp-full doctor
+uvx gtrends-mcp-full doctor
 ```
 
 `doctor` asks every Google Trends endpoint one question; all eight should say `OK`. On the very first run a chart endpoint may report that the session is still being validated — that passes after a minute and a half and does not come back.
@@ -157,7 +158,7 @@ uvx --from git+https://github.com/mamrrez/gtrends-mcp-full gtrends-mcp-full doct
 
 ### From the command line
 
-With the package installed (`uv tool install git+https://github.com/mamrrez/gtrends-mcp-full`, or `pip install` the same address):
+With the package installed (`uv tool install gtrends-mcp-full` or `pip install gtrends-mcp-full`):
 
 ```sh
 gtrends-mcp-full doctor                 # configuration and endpoint check

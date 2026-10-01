@@ -16,12 +16,12 @@ Python 3.10 or newer, and [uv](https://docs.astral.sh/uv/) or pip. No Google acc
 
 ## Add it to your client
 
-`uvx` fetches and runs the server straight from the repository; there is nothing to download first.
+`uvx` fetches the package from PyPI and runs it; there is nothing to download first.
 
 ### Claude Code
 
 ```sh
-claude mcp add gtrends -- uvx --from git+https://github.com/mamrrez/gtrends-mcp-full gtrends-mcp-full
+claude mcp add gtrends -- uvx gtrends-mcp-full
 ```
 
 ### Claude Desktop, Cursor, Windsurf, VS Code
@@ -33,7 +33,7 @@ Add this to the client's MCP configuration file:
   "mcpServers": {
     "gtrends": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/mamrrez/gtrends-mcp-full", "gtrends-mcp-full"],
+      "args": ["gtrends-mcp-full"],
       "env": {
         "GTRENDS_GEO": "US",
         "GTRENDS_TIMEZONE": "America/New_York"
@@ -48,7 +48,7 @@ The `env` block is optional.
 ## Check it
 
 ```sh
-uvx --from git+https://github.com/mamrrez/gtrends-mcp-full gtrends-mcp-full doctor
+uvx gtrends-mcp-full doctor
 ```
 
 `doctor` prints the configuration and asks every Google Trends endpoint one question. All eight should say `OK`; on the very first run a chart endpoint may say the session is still being validated, which passes after a minute and a half.
@@ -58,7 +58,7 @@ uvx --from git+https://github.com/mamrrez/gtrends-mcp-full gtrends-mcp-full doct
 To use the command line (`doctor`, `trending`, `snapshot`) or to pin a version:
 
 ```sh
-uv tool install git+https://github.com/mamrrez/gtrends-mcp-full
+uv tool install gtrends-mcp-full     # or: pip install gtrends-mcp-full
 gtrends-mcp-full --version
 ```
 
