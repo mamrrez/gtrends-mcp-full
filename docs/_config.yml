@@ -10,6 +10,7 @@ heading_anchors: true
 enable_copy_code_button: true
 
 aux_links:
+  Project page: https://hasanpour.com/tools/google-trends-mcp/
   GitHub: https://github.com/mamrrez/gtrends-mcp-full
 aux_links_new_tab: true
 

@@ -12,7 +12,7 @@
 [![MCP SDK 2.x](https://img.shields.io/badge/MCP%20SDK-2.x-green)](https://github.com/modelcontextprotocol/python-sdk)
 [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/mamrrez/gtrends-mcp-full/blob/main/LICENSE)
 
-**[Quick start](#quick-start)** · **[Tools](#tools)** · **[Prompts](#prompts)** · **[Configuration](#configuration)** · **[How it stays unblocked](#how-it-stays-unblocked)** · **[FAQ](#faq)**
+**[Project page](https://hasanpour.com/tools/google-trends-mcp/)** · **[Quick start](#quick-start)** · **[Tools](#tools)** · **[Prompts](#prompts)** · **[Configuration](#configuration)** · **[How it stays unblocked](#how-it-stays-unblocked)** · **[FAQ](#faq)** · **[Docs](https://mamrrez.github.io/gtrends-mcp-full/)**
 
 ---
 

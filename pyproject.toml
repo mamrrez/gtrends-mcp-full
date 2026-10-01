@@ -34,7 +34,7 @@ dev = ["pytest>=8", "ruff>=0.6"]
 gtrends-mcp-full = "gtrends_mcp_full.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/mamrrez/gtrends-mcp-full"
+Homepage = "https://hasanpour.com/tools/google-trends-mcp/"
 Documentation = "https://mamrrez.github.io/gtrends-mcp-full/"
 Repository = "https://github.com/mamrrez/gtrends-mcp-full"
 Issues = "https://github.com/mamrrez/gtrends-mcp-full/issues"

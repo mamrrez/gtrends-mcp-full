@@ -39,7 +39,7 @@ mcp = MCPServer(
     title="Google Trends",
     instructions=INSTRUCTIONS,
     version=__version__,
-    website_url="https://github.com/mamrrez/gtrends-mcp-full",
+    website_url="https://hasanpour.com/tools/google-trends-mcp/",
 )
 rt = Runtime()
 
