@@ -1,0 +1,71 @@
+[build-system]
+requires = ["hatchling>=1.25", "hatch-fancy-pypi-readme>=24.1"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gtrends-mcp-full"
+version = "0.1.0"
+description = "Google Trends MCP server for Claude, Cursor and any MCP client: Trending Now, interest over time, regions, related searches, seasonality and share of search. No API key, no browser."
+dynamic = ["readme"]
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Mohammadreza (mamrrez)" }]
+keywords = ["google-trends", "trends", "trending", "mcp", "mcp-server", "model-context-protocol", "seo", "keyword-research", "claude", "cursor"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+]
+dependencies = [
+  "mcp>=2.0,<3",
+  "requests>=2.32.4",
+  "tzdata>=2024.1; sys_platform == 'win32'",  # Windows has no system tz database for zoneinfo
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+gtrends-mcp-full = "gtrends_mcp_full.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/mamrrez/gtrends-mcp-full"
+Documentation = "https://mamrrez.github.io/gtrends-mcp-full/"
+Repository = "https://github.com/mamrrez/gtrends-mcp-full"
+Issues = "https://github.com/mamrrez/gtrends-mcp-full/issues"
+Changelog = "https://github.com/mamrrez/gtrends-mcp-full/blob/main/CHANGELOG.md"
+
+# PyPI cannot resolve relative paths, so the banner is pointed at the repository when the package is built.
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = "text/markdown"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.md"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions]]
+pattern = 'src="assets/'
+replacement = 'src="https://raw.githubusercontent.com/mamrrez/gtrends-mcp-full/main/assets/'
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gtrends_mcp_full"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "README.md", "LICENSE", "CHANGELOG.md"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501", "B905"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

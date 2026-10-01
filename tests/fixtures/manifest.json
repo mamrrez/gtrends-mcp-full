@@ -1,0 +1,39 @@
+{
+  "recorded": "2026-10-01",
+  "requests": 16,
+  "session": "USER_TYPE_SCRAPER",
+  "hl": "en-US",
+  "questions": {
+    "one": {
+      "keyword": "coffee",
+      "geo": "US",
+      "time": "today 12-m"
+    },
+    "two": [
+      {
+        "keyword": "coffee",
+        "geo": "US",
+        "time": "today 12-m"
+      },
+      {
+        "keyword": "tea",
+        "geo": "US",
+        "time": "today 12-m"
+      }
+    ],
+    "ranges": [
+      {
+        "keyword": "coffee",
+        "geo": "US",
+        "time": "2026-08-03 2026-09-01"
+      },
+      {
+        "keyword": "coffee",
+        "geo": "US",
+        "time": "2025-08-03 2025-09-01"
+      }
+    ],
+    "trending": "US, 24 hours",
+    "topic lookup": "coffee"
+  }
+}

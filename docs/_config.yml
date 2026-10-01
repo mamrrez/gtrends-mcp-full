@@ -1,0 +1,39 @@
+title: gtrends-mcp-full
+description: A Google Trends MCP server — Trending Now, interest over time, seasonality and share of search for Claude, Cursor and any MCP client. No API key.
+remote_theme: just-the-docs/just-the-docs
+url: https://mamrrez.github.io
+baseurl: /gtrends-mcp-full
+
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+enable_copy_code_button: true
+
+aux_links:
+  GitHub: https://github.com/mamrrez/gtrends-mcp-full
+aux_links_new_tab: true
+
+back_to_top: true
+back_to_top_text: Back to top
+
+footer_content: 'MIT licensed. Not affiliated with Google. Google Trends is a trademark of Google LLC.'
+
+callouts:
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: yellow
+  tip:
+    title: Tip
+    color: green
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

@@ -1,0 +1,38 @@
+# Secrets — never commit these
+cookies.json
+cookies.txt
+*cookies*.txt
+.env
+.env.*
+
+# Local data
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+.tmp-config/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Jekyll (docs site) local builds
+docs/_site/
+docs/.jekyll-cache/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Working notes (kept locally, not published)
+RESEARCH.md

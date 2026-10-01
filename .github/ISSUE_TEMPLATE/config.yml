@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/mamrrez/gtrends-mcp-full/tree/main/docs
+    about: Read the documentation and the troubleshooting page before filing an issue.
+  - name: Security Vulnerabilities
+    url: https://github.com/mamrrez/gtrends-mcp-full/blob/main/SECURITY.md
+    about: Read SECURITY.md for instructions on privately reporting security vulnerabilities.
