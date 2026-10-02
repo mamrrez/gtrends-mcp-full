@@ -16,6 +16,8 @@
 
 ---
 
+<p align="center"><img src="assets/demo.gif" alt="Claude answering whether heat pump searches are growing in the UK, using the trend_momentum and seasonality tools of gtrends-mcp-full" width="100%"></p>
+
 ## What you get
 
 | | |
