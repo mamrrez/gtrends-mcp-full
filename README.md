@@ -256,6 +256,10 @@ python scripts/record_fixtures.py # re-record the real answers the contract test
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [CHANGELOG.md](CHANGELOG.md).
 
+## Related
+
+- [gsc-mcp-full](https://github.com/mamrrez/gsc-mcp-full) — the companion Google Search Console MCP server: 37 tools, every API endpoint, hourly data and history beyond 16 months.
+
 ## License
 
 MIT. Not affiliated with or endorsed by Google. Google Trends is a trademark of Google LLC. Use of Google Trends data is subject to Google's terms of service.
