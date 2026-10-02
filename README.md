@@ -259,3 +259,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [CHANGELOG.md](CHANGELOG.md).
 ## License
 
 MIT. Not affiliated with or endorsed by Google. Google Trends is a trademark of Google LLC. Use of Google Trends data is subject to Google's terms of service.
+
+<!-- mcp-name: io.github.mamrrez/gtrends-mcp-full -->

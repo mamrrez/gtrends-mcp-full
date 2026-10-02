@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] — 2026-10-02
+
+### Added
+- Listed in the official MCP Registry as `io.github.mamrrez/gtrends-mcp-full` (`server.json`).
+
 ## [0.1.0] — 2026-10-01
 
 First release: a Google Trends MCP server with 32 tools, 4 prompts and 2 reference

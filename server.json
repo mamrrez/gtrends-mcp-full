@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.mamrrez/gtrends-mcp-full",
+  "title": "Google Trends",
+  "description": "Google Trends: Trending Now, interest over time, regions, related searches. No API key.",
+  "repository": {
+    "url": "https://github.com/mamrrez/gtrends-mcp-full",
+    "source": "github"
+  },
+  "websiteUrl": "https://hasanpour.com/tools/google-trends-mcp/",
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "gtrends-mcp-full",
+      "version": "0.1.1",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gtrends-mcp-full"
-version = "0.1.0"
+version = "0.1.1"
 description = "Google Trends MCP server for Claude, Cursor and any MCP client: Trending Now, interest over time, regions, related searches, seasonality and share of search. No API key, no browser."
 dynamic = ["readme"]
 license = "MIT"
