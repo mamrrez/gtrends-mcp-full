@@ -8,12 +8,12 @@
     "source": "github"
   },
   "websiteUrl": "https://hasanpour.com/tools/google-trends-mcp/",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "gtrends-mcp-full",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"

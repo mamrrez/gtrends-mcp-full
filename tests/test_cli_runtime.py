@@ -113,7 +113,7 @@ def test_serve_is_the_default_command(monkeypatch):
 def test_version(capsys):
     with pytest.raises(SystemExit):
         cli.main(["--version"])
-    assert capsys.readouterr().out.strip() == "0.1.1"
+    assert capsys.readouterr().out.strip() == "0.1.2"
 
 
 def test_doctor(fake_runtime, capsys):

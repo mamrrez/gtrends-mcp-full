@@ -6,4 +6,4 @@ parts that never touch the network (``timeframes``, ``analysis``, ``matching``,
 ``format``) can be used and tested on their own.
 """
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"

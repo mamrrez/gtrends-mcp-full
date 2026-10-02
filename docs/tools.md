@@ -7,7 +7,7 @@ description: Every Google Trends tool with its parameters, generated from the se
 # Tool reference
 {: .no_toc }
 
-32 tools in gtrends-mcp-full 0.1.1. This page is generated from the code by `scripts/gen_tools_doc.py`.
+32 tools in gtrends-mcp-full 0.1.2. This page is generated from the code by `scripts/gen_tools_doc.py`.
 
 Tools marked **local** never contact Google: they work on the data file on your machine.
 
